@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share A Meal | Share Food, Share Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">🍱 Share<span>A</span>Meal</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#available">Available Food</a>
+    </div>
+    <a href="#share" class="nav-btn">Share Food +</a>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">💚 GOOD FOOD. GOOD HEARTS.</p>
+      <h1>Don't Waste Food,<br><span>Share the Love.</span></h1>
+      <p class="hero-text">
+        Have extra food? Someone nearby might need it.
+        Let's turn leftovers into smiles and make every meal count.
+      </p>
+      <div class="hero-actions">
+        <a href="#share" class="primary-btn">🍲 Share Food Now</a>
+        <a href="#available" class="secondary-btn">Find Food ↓</a>
+      </div>
+      <div class="hero-note">🌱 Every meal shared makes a difference.</div>
+    </div>
+    <div class="hero-art">
+      <div class="food-circle">
+        <span>🥗</span>
+      </div>
+      <div class="floating-card">💚 Food is for sharing!</div>
+      <div class="floating-card card-two">✨ Spread kindness</div>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div><strong>🤝</strong><h3>Share Kindly</h3><p>Give extra food a purpose</p></div>
+    <div><strong>🍲</strong><h3>Reduce Waste</h3><p>Save good food from waste</p></div>
+    <div><strong>💚</strong><h3>Help People</h3><p>Build a caring community</p></div>
+  </section>
+
+  <section class="section" id="share">
+    <div class="section-heading">
+      <p class="eyebrow">MAKE A DIFFERENCE</p>
+      <h2>Share a Meal, <span>Spread a Smile.</span></h2>
+      <p>Fill in the details of the food you want to share.</p>
+    </div>
+
+    <form id="foodForm" class="food-form">
+      <div class="form-grid">
+        <div class="field">
+          <label for="foodName">Food Name *</label>
+          <input id="foodName" type="text" placeholder="e.g. Vegetable Rice" required>
+        </div>
+        <div class="field">
+          <label for="quantity">Quantity *</label>
+          <input id="quantity" type="text" placeholder="e.g. 10 meals" required>
+        </div>
+        <div class="field">
+          <label for="location">Pickup Location *</label>
+          <input id="location" type="text" placeholder="Enter your area" required>
+        </div>
+        <div class="field">
+          <label for="contact">Contact Number</label>
+          <input id="contact" type="tel" placeholder="Optional contact number">
+        </div>
+        <div class="field">
+          <label for="pickup">Pickup Time *</label>
+          <input id="pickup" type="text" placeholder="e.g. Today, 6 PM" required>
+        </div>
+        <div class="field">
+          <label for="foodType">Food Type *</label>
+          <select id="foodType" required>
+            <option value="">Choose food type</option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            <option>Snacks</option>
+            <option>Fruits</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="description">Additional Details</label>
+        <textarea id="description" rows="3" placeholder="Freshness, packing or other details..."></textarea>
+      </div>
+      <button class="primary-btn submit-btn" type="submit">💚 Post Food Details</button>
+      <p class="form-note">Please share only safe, fresh food suitable for consumption.</p>
+      <p id="formMessage" role="status"></p>
+    </form>
+  </section>
+
+  <section class="section available-section" id="available">
+    <div class="section-heading">
+      <p class="eyebrow">COMMUNITY FOOD BOARD</p>
+      <h2>Food Shared with <span>Love 💚</span></h2>
+      <p>Explore food listings shared by our community.</p>
+    </div>
+
+    <div class="search-box">
+      <span>🔎</span>
+      <input id="searchInput" type="search" placeholder="Search by food or location...">
+    </div>
+
+    <div id="foodList" class="food-list">
+      <div class="empty-state">
+        <span>🥘</span>
+        <h3>Your community starts here!</h3>
+        <p>No food listings yet. Be the first to share a meal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact" id="about">
+    <span>🌍</span>
+    <h2>A small act of kindness can change someone's day.</h2>
+    <p>Let's connect extra food with people who need it and create a world with less waste.</p>
+    <a href="#share" class="primary-btn">Be a Food Hero 💚</a>
+  </section>
+
+  <footer>
+    <a href="#home" class="logo">🍱 Share<span>A</span>Meal</a>
+    <p>Made with 💚 to reduce food waste and spread kindness.</p>
+    <small>Hackathon MVP Project · 2026</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
